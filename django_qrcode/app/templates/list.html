@@ -1,0 +1,9 @@
+<h1>Here the list of QR codes would be displayed...</h1>
+
+<ul>
+  {% for item in list %}
+  <li>{{item.text}}</li>
+    <li>{{item.qr_image}}</li>
+    <img src="{{item.qr_image.url}}" alt="">
+  {% endfor %}
+</ul>

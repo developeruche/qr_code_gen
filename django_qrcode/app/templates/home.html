@@ -1,0 +1,7 @@
+<h1>Welcome to this qrcode cretion app</h1>
+
+<form class="" action="{% url 'home' %}" method="post">
+  {% csrf_token %}
+  <input type="text" name="text">
+  <button type="submit" name="button">Make QrCode</button>
+</form>
